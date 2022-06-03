@@ -46,6 +46,12 @@ pg.draw.line(screen, line_color, (width / 3 * 2, 0), (width / 3 * 2, height), 7)
 # drawing horizontal lines
 pg.draw.line(screen, line_color, (0, height / 3), (width, height / 3, height), 7)
 pg.draw.line(screen, line_color, (0, height / 3 * 2), (width, height / 3 * 2), 7)
+
+
+def draw_status():
+    pass
+
+
 draw_status()
 
 def draw_status():
@@ -95,12 +101,12 @@ def check_win():
     if (TTT [0][0] == TTT [1] [1] == TTT [2][2]) and (TTT [0][0] is not None):
             # game won diagonally left to right
             winner = TTT [0] [0]
-            pg.draw.line(screen, (250, 70, 70), (0, (50, 50) (350, 350), 4)
+            pg.draw.line(screen, (250, 70, 70), (0, (50, 50) (350, 350), 4))
 
     if (TTT [0][2] == TTT [1] [1] == TTT [2][0]) and (TTT [0][2] is not None):
             # game won diagonally right to left
             winner = TTT [0] [2]
-            pg.draw.line(screen, (250, 70, 70), (0, (350, 50) (50, 350), 4)
+            pg.draw.line(screen, (250, 70, 70), (0, (350, 50) (50, 350), 4))
 
     if all( [all (row) for row in TTT] ) and winner is None:
         draw = True

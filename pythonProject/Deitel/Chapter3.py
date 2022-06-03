@@ -1,3 +1,4 @@
+""" EXAMPLES """
 # student_grade = 75
 # if student_grade >= 90:
 #     print('A')
@@ -133,6 +134,9 @@
 #
 # print(f"{Decimal('37.45') * Decimal('1.0625'):.2f}")
 
-i, j, k, m = 1, 2, 3, 4
-var = (i >= 1) and (j < 4)
-print(var)
+# i, j, k, m = 1, 2, 3, 4
+# var = (i >= 1) and (j < 4)
+# print(var)
+
+"""Exercise 3.17"""
+

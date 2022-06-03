@@ -1,3 +1,4 @@
+"""EXAMPLES and EXERCISES"""
 """simple if statements"""
 # print('Enter two integers and compare with boolean if statements')
 # number1 = int(input('Enter first  integer'))
