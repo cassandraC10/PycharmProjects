@@ -14,13 +14,13 @@ def next_turn(row, column):
 
             if check_winner() is False:
                 player = players[1]
-                label.config(text=(players[1] + " turn"))
+                label.config(text=(players[1] + " TURN"))
 
             elif check_winner() is True:
-                label.config(text=(players[0] + " wins"))
+                label.config(text=(players[0] + " WINS"))
 
-            elif check_winner() == "Draw":
-                label.config(text="Draw!")
+            elif check_winner() == "DRAW":
+                label.config(text="DRAW!")
 
         else:
 
@@ -28,13 +28,13 @@ def next_turn(row, column):
 
             if check_winner() is False:
                 player = players[0]
-                label.config(text=(players[0] + " turn"))
+                label.config(text=(players[0] + " TURN"))
 
             elif check_winner() is True:
-                label.config(text=(players[1] + " wins"))
+                label.config(text=(players[1] + " WINS"))
 
-            elif check_winner() == "Draw":
-                label.config(text="Draw !!")
+            elif check_winner() == "DRAW":
+                label.config(text="DRAW !!")
 
 
 def check_winner():
@@ -69,7 +69,7 @@ def check_winner():
 
         for row in range(3):
             for column in range(3):
-                return "Draw"
+                return "DRAW"
 
     else:
         return False
@@ -81,9 +81,9 @@ def empty_spaces():
 
     for row in range(3):
         for column in range(3):
-            buttons[row][column].config(bg="grey")
-            buttons[1][column].config(bg="grey")
-            buttons[2][column].config(bg="grey")
+            buttons[row][column].config(bg="#C7D36F")
+            buttons[1][column].config(bg="#C7D36F")
+            buttons[2][column].config(bg="#C7D36F")
             if buttons[row][column]['text'] != "":
                 spaces -= 1
 
@@ -98,11 +98,11 @@ def new_game():
 
     player = random.choice(players)
 
-    label.config(text=player + " turn")
+    label.config(text=player + " TURN")
 
     for row in range(3):
         for column in range(3):
-            buttons[row][column].config(text="", bg="#F0F0F0")
+            buttons[row][column].config(text="", bg="#C7D36F")
 
 
 window = Tk()
@@ -113,10 +113,10 @@ buttons = [[0, 0, 0],
            [0, 0, 0],
            [0, 0, 0]]
 
-label = Label(text=player + " turn", bg="grey", font=('consolas', 40))
+label = Label(text=player + " TURN", font=('consolas', 40), bg="#9EB23B")
 label.pack(side="top")
 
-reset_button = Button(text="restart", font=('consolas', 20), command=new_game)
+reset_button = Button(text="RESTART", font=('consolas', 20), command=new_game)
 reset_button.pack(side="top")
 
 frame = Frame(window)
@@ -124,7 +124,7 @@ frame.pack()
 
 for row in range(3):
     for column in range(3):
-        buttons[row][column] = Button(frame, text="", font=('consolas', 40), bg="green", width=5, height=2,
+        buttons[row][column] = Button(frame, text="", font=('consolas', 40), bg="#C7D36F", width=5, height=2,
                                       command=lambda row=row, column=column: next_turn(row, column))
         buttons[row][column].grid(row=row, column=column)
 

@@ -68,22 +68,22 @@
 
 """ A program to summarize results and bonus instructor"""
 
-# passes = 0
-# failures = 0
-#
-# for student in range(10):
-#     result = int(input('input exam result: '))
-#
-#     if result >= 5:
-#         passes += 1
-#     else:
-#         failures += 1
-#
-# print('number of passes is: ', passes)
-# print('number of failures is: ', failures)
-#
-# if passes >= 8:
-#     print('Bonus to instructor')
+passes = 0
+failures = 0
+
+for student in range(10):
+    result = int(input('input exam result: '))
+
+    if result == 1:
+        passes += 1
+    else:
+        failures += 1
+
+print('number of passes is: ', passes)
+print('number of failures is: ', failures)
+
+if passes >= 8:
+    print('Bonus to instructor')
 
 # # for number in range(0, 100, 5):
 # for number in range(100, 0, -5):
@@ -138,5 +138,16 @@
 # var = (i >= 1) and (j < 4)
 # print(var)
 
-"""Exercise 3.17"""
+"""Exercise 3.17 Data Science: mean,median,mode"""
+import statistics
 
+#grades = [85, 93, 45, 89, 85]
+
+# print(statistics.mean(grades))
+# print(statistics.median(grades))
+# print(statistics.mode(grades))
+
+# another_grade = [47, 95, 88, 73, 88, 84]
+# print(statistics.mean(another_grade))
+# print(statistics.median(another_grade))
+# print(statistics.mode(another_grade))

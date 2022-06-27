@@ -179,10 +179,6 @@ for year in range(1, 11):
 # print('your target heart rate is ', Target_heartrate)
 
 """No. 2.15 (Sort in Ascending Order) """
-# user_input = float(input('Enter first number')), float(input('Enter second number')), float(input('Enter third number'))
-# # if number1 > number2:
-# #     print('number 1 is greater than number 2')
-# # i am lost, have an idea of what to type, but it'll waste my time
-# """Correction"""
-# # built in functions
-# print(sorted(user_input))
+# user_input = float(input('Enter first number')), float(input('Enter second number')), float(input('Enter third
+# number')) # if number1 > number2: #     print('number 1 is greater than number 2') # i am lost, have an idea of
+# what to type, but it'll waste my time """Correction""" # built in functions print(sorted(user_input))
