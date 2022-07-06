@@ -141,7 +141,7 @@ if passes >= 8:
 """Exercise 3.17 Data Science: mean,median,mode"""
 import statistics
 
-#grades = [85, 93, 45, 89, 85]
+# grades = [85, 93, 45, 89, 85]
 
 # print(statistics.mean(grades))
 # print(statistics.median(grades))
