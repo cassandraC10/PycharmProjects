@@ -1,16 +1,21 @@
-""" (Fill in the Missing Code) In the code below
-for ***:
- for ***:
- print('@')
- print()
-replace the *** so that when you execute the code, it displays two rows, each containing
-seven @ symbols, as in:
-@@@@@@@
-@@@@@@@ """
+#
+# for ***:
+#  for ***:
+#   print('@')
+#   print()
 
-for ***:
- for ***:
-  print('@')
-  print()
+#  I DONT KNOW AND THE CORRECTION TOO.
 
- #  I DONT KNOW AND THE CORRECTION TOO.
+def test(func, arg):
+
+  return func(func(arg))
+
+
+
+def mult(x):
+
+  return x * x
+
+
+
+print(test(mult, 2))

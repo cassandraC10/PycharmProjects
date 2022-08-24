@@ -3,6 +3,10 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/djangoProject/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/djangoProject1/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/djangoProject2/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/flaskProject/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/workflowEngine/venv" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -28,7 +28,7 @@ def equals():
         equation_text = ""
 
     except ZeroDivisionError:
-        equation_label.set("Can't divide 0")
+        equation_label.set("Can't divide by 0")
 
         equation_text = ""
 
@@ -125,3 +125,7 @@ clear.pack()
 
 
 window.mainloop()
+
+
+
+
